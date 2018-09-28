@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		159CF0B36935E36DF1593F7A /* libPods-SunriseSunset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74DDF5F7715BC6010FE0EE4 /* libPods-SunriseSunset.a */; };
 		D99A5B49215E580A00492147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A5B48215E580A00492147 /* AppDelegate.swift */; };
 		D99A5B4B215E580A00492147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A5B4A215E580A00492147 /* ViewController.swift */; };
 		D99A5B4E215E580A00492147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99A5B4C215E580A00492147 /* Main.storyboard */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		79F8C7BEF0739812E2D49605 /* Pods-SunriseSunset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunriseSunset.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunriseSunset/Pods-SunriseSunset.release.xcconfig"; sourceTree = "<group>"; };
 		D99A5B45215E580A00492147 /* SunriseSunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunriseSunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A5B48215E580A00492147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99A5B4A215E580A00492147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -24,6 +26,8 @@
 		D99A5B52215E580B00492147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99A5B55215E580B00492147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99A5B57215E580B00492147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0AB76996CC557E7CFE6A310 /* Pods-SunriseSunset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunriseSunset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunriseSunset/Pods-SunriseSunset.debug.xcconfig"; sourceTree = "<group>"; };
+		F74DDF5F7715BC6010FE0EE4 /* libPods-SunriseSunset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunriseSunset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				159CF0B36935E36DF1593F7A /* libPods-SunriseSunset.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3765C0415050B246AB3C340E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F74DDF5F7715BC6010FE0EE4 /* libPods-SunriseSunset.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		6A0DFF038F5A8DA83ED9E214 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E0AB76996CC557E7CFE6A310 /* Pods-SunriseSunset.debug.xcconfig */,
+				79F8C7BEF0739812E2D49605 /* Pods-SunriseSunset.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D99A5B3C215E580A00492147 = {
 			isa = PBXGroup;
 			children = (
 				D99A5B47215E580A00492147 /* SunriseSunset */,
 				D99A5B46215E580A00492147 /* Products */,
+				6A0DFF038F5A8DA83ED9E214 /* Pods */,
+				3765C0415050B246AB3C340E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,6 +98,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D99A5B5A215E580B00492147 /* Build configuration list for PBXNativeTarget "SunriseSunset" */;
 			buildPhases = (
+				9412E41E5CAA6B09350AF8A6 /* [CP] Check Pods Manifest.lock */,
 				D99A5B41215E580A00492147 /* Sources */,
 				D99A5B42215E580A00492147 /* Frameworks */,
 				D99A5B43215E580A00492147 /* Resources */,
@@ -131,6 +156,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9412E41E5CAA6B09350AF8A6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-SunriseSunset-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D99A5B41215E580A00492147 /* Sources */ = {
@@ -283,6 +333,7 @@
 		};
 		D99A5B5B215E580B00492147 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E0AB76996CC557E7CFE6A310 /* Pods-SunriseSunset.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -301,6 +352,7 @@
 		};
 		D99A5B5C215E580B00492147 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79F8C7BEF0739812E2D49605 /* Pods-SunriseSunset.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
