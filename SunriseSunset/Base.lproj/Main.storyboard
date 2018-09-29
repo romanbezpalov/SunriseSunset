@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +12,62 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SunriseSunset" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Curent location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2N7-nz-WWw">
+                                <rect key="frame" x="129" y="102" width="117" height="21"/>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunset" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="d59-fe-XU3">
+                                <rect key="frame" x="161" y="314.5" width="53.5" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="0.22986786949999999" blue="0.13298027609999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UtV-xN-R7m">
+                                <rect key="frame" x="166.5" y="173" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunrise" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lyf-5y-RR5">
+                                <rect key="frame" x="159" y="244" width="57.5" height="20.5"/>
+                                <color key="backgroundColor" red="1" green="0.78173533709999998" blue="0.70495644859999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="2N7-nz-WWw" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="82" id="QXW-PU-q2R"/>
+                            <constraint firstItem="lyf-5y-RR5" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htI-Y7-xcA"/>
+                            <constraint firstItem="UtV-xN-R7m" firstAttribute="top" secondItem="2N7-nz-WWw" secondAttribute="bottom" constant="50" id="iUb-iu-5ns"/>
+                            <constraint firstItem="UtV-xN-R7m" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="iiV-S7-3WO"/>
+                            <constraint firstItem="d59-fe-XU3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jTJ-8y-KtT"/>
+                            <constraint firstItem="2N7-nz-WWw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uq7-2N-DYu"/>
+                            <constraint firstItem="lyf-5y-RR5" firstAttribute="top" secondItem="UtV-xN-R7m" secondAttribute="bottom" constant="50" id="v1S-pm-SJe"/>
+                            <constraint firstItem="d59-fe-XU3" firstAttribute="top" secondItem="lyf-5y-RR5" secondAttribute="bottom" constant="50" id="wIK-xi-eqD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="curentLocation" destination="2N7-nz-WWw" id="WfZ-dJ-nPC"/>
+                        <outlet property="reallLocation" destination="UtV-xN-R7m" id="yiz-C8-IEP"/>
+                        <outlet property="sunriseLable" destination="lyf-5y-RR5" id="cVU-0g-8fQ"/>
+                        <outlet property="sunsetLable" destination="d59-fe-XU3" id="ndd-eB-BPm"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="140" y="114.69265367316342"/>
         </scene>
     </scenes>
 </document>

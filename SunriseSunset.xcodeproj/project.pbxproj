@@ -14,6 +14,7 @@
 		D99A5B51215E580A00492147 /* SunriseSunset.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D99A5B4F215E580A00492147 /* SunriseSunset.xcdatamodeld */; };
 		D99A5B53215E580B00492147 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D99A5B52215E580B00492147 /* Assets.xcassets */; };
 		D99A5B56215E580B00492147 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99A5B54215E580B00492147 /* LaunchScreen.storyboard */; };
+		D9BB6FE4215F5BC50062A7B9 /* API Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9BB6FE3215F5BC50062A7B9 /* API Manager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		D99A5B52215E580B00492147 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D99A5B55215E580B00492147 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D99A5B57215E580B00492147 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D9BB6FE3215F5BC50062A7B9 /* API Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = "API Manager.swift"; path = "../API Manager.swift"; sourceTree = "<group>"; };
 		E0AB76996CC557E7CFE6A310 /* Pods-SunriseSunset.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunriseSunset.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SunriseSunset/Pods-SunriseSunset.debug.xcconfig"; sourceTree = "<group>"; };
 		F74DDF5F7715BC6010FE0EE4 /* libPods-SunriseSunset.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-SunriseSunset.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -82,6 +84,7 @@
 			children = (
 				D99A5B48215E580A00492147 /* AppDelegate.swift */,
 				D99A5B4A215E580A00492147 /* ViewController.swift */,
+				D9BB6FE3215F5BC50062A7B9 /* API Manager.swift */,
 				D99A5B4C215E580A00492147 /* Main.storyboard */,
 				D99A5B52215E580B00492147 /* Assets.xcassets */,
 				D99A5B54215E580B00492147 /* LaunchScreen.storyboard */,
@@ -188,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D99A5B4B215E580A00492147 /* ViewController.swift in Sources */,
+				D9BB6FE4215F5BC50062A7B9 /* API Manager.swift in Sources */,
 				D99A5B51215E580A00492147 /* SunriseSunset.xcdatamodeld in Sources */,
 				D99A5B49215E580A00492147 /* AppDelegate.swift in Sources */,
 			);
