@@ -36,6 +36,10 @@
 	</array>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string>App ask your location</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string></string>
+	<key>NSLocationUsageDescription</key>
+	<string></string>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>
 		<string>UIInterfaceOrientationPortrait</string>

@@ -25,8 +25,11 @@ class ViewController: UIViewController {
         
         locationManeger.delegate = self
         locationManeger.requestWhenInUseAuthorization()
+       
         
         
+        
+
 
     }
     
@@ -42,11 +45,18 @@ extension ViewController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         
-        if let lat = locations.last?.coordinate.latitude,let long = locations.last?.coordinate.longitude{
+        if let lat = locations.last?.coordinate.latitude,let long = locations.last?.coordinate.longitude {
             
-            self.reallLocation.text = "\(lat),\(long)"
-//            print(\(lat"),\(long)")
-        
+            let latitude = Float(lat)
+            let longtitude = Float(long)
+            
+            self.reallLocation.text = "\(latitude),\(longtitude)"
+            
+            ApiManager.shared.getInfo(lat: latitude, lng: longtitude, completion: { model in
+                guard let strongModel = model else { return } // перевірка на nil
+                self.sunriseLable.text = strongModel.sunRise
+                self.sunsetLable.text = strongModel.sunSet
+            })
         } else {
         
             print("No coordinates")

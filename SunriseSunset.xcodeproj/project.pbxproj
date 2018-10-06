@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		159CF0B36935E36DF1593F7A /* libPods-SunriseSunset.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F74DDF5F7715BC6010FE0EE4 /* libPods-SunriseSunset.a */; };
+		D92CC67F21636C7D001658E4 /* ResponseStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = D92CC67E21636C7D001658E4 /* ResponseStatus.swift */; };
 		D99A5B49215E580A00492147 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A5B48215E580A00492147 /* AppDelegate.swift */; };
 		D99A5B4B215E580A00492147 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D99A5B4A215E580A00492147 /* ViewController.swift */; };
 		D99A5B4E215E580A00492147 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D99A5B4C215E580A00492147 /* Main.storyboard */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		79F8C7BEF0739812E2D49605 /* Pods-SunriseSunset.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SunriseSunset.release.xcconfig"; path = "Pods/Target Support Files/Pods-SunriseSunset/Pods-SunriseSunset.release.xcconfig"; sourceTree = "<group>"; };
+		D92CC67E21636C7D001658E4 /* ResponseStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseStatus.swift; sourceTree = "<group>"; };
 		D99A5B45215E580A00492147 /* SunriseSunset.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunriseSunset.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D99A5B48215E580A00492147 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D99A5B4A215E580A00492147 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 				D99A5B48215E580A00492147 /* AppDelegate.swift */,
 				D99A5B4A215E580A00492147 /* ViewController.swift */,
 				D9BB6FE3215F5BC50062A7B9 /* API Manager.swift */,
+				D92CC67E21636C7D001658E4 /* ResponseStatus.swift */,
 				D99A5B4C215E580A00492147 /* Main.storyboard */,
 				D99A5B52215E580B00492147 /* Assets.xcassets */,
 				D99A5B54215E580B00492147 /* LaunchScreen.storyboard */,
@@ -194,6 +197,7 @@
 				D9BB6FE4215F5BC50062A7B9 /* API Manager.swift in Sources */,
 				D99A5B51215E580A00492147 /* SunriseSunset.xcdatamodeld in Sources */,
 				D99A5B49215E580A00492147 /* AppDelegate.swift in Sources */,
+				D92CC67F21636C7D001658E4 /* ResponseStatus.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
